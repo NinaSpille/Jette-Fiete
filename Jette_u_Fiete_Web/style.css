@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.95);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > img {
+    width: 80vw;
+}
+
+h1 {
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.70);
+}
+main> form {
+    display: flex;
+    flex-direction:column ;
+    gap: 0.5em;
+    width: 300px;
+    margin: 20px auto;
+
+}
+label{
+    color: rgba(0, 0, 0, 60);
+}
+main >form >fieldset {
+    border: none;
+}
+main > form > fieldset > input , main > form > fieldset > button  {
+    height: 2em;
+}
+main > form > fieldset > input {
+    width: 200px;
+    border:none;
+    border-bottom: 1px solid  rgb(172, 172, 172) ;
+    border-radius:2px ;
+}
+input::placeholder {
+    font-style: italic;
+  }
+  
+main > form > fieldset > button{
+    background-color: white;
+    border: none;
+}
+i{
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.50);
+    transition:all 0.5s;
+}
+main > form > fieldset > button:hover i{
+   color: turquoise;
+   
+}
+
+@media only screen and (min-width:768px) {
+    img{
+        max-width: 500px;
+    }
+    header {
+        align-items: center;
+    }
+}
