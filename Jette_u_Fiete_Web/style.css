@@ -27,7 +27,7 @@ main> form {
     display: flex;
     flex-direction:column ;
     gap: 0.5em;
-    width: 300px;
+    width: 350px;
     margin: 20px auto;
 
 }
@@ -54,14 +54,45 @@ main > form > fieldset > button{
     background-color: white;
     border: none;
 }
-i{
+/*{
     font-size: 14pt;
     color: rgba(0, 0, 0, 0.50);
     transition:all 0.5s;
+}*/
+button > div {
+    background-color: rgba(64, 224, 208, 0.404);
+    height: 50px;
+    margin-top: -30px;
+    border-radius: 50%;
+    visibility:hidden ;
+    z-index: -1;
+    transition: all 1s;
 }
-main > form > fieldset > button:hover i{
-   color: turquoise;
+main img {
+    width: 50px;
+    margin-bottom: -20px;
+    z-index: +1;
+    transition: all 1s;
+}
+main > form > fieldset > button:hover div{
+    visibility:visible ;
    
+}
+main > form > fieldset > button:visited img{
+    visibility:hidden;
+   
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width:100vw;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 2em;
 }
 
 @media only screen and (min-width:768px) {
